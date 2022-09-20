@@ -1,11 +1,23 @@
 @charset "UTF-8";
 
+:root{
+   --cor1: #565264;
+   --cor2: #706677;
+   --cor3: #a6808c;
+   --cor4: #ccb7ae;
+   --co55: #d6cfcb;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 /*mobile first*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 header{
     padding: 20px;
     margin: auto;
@@ -28,12 +40,11 @@ main{
 main > section {
     width: 80%;
     margin: auto;
-    margin: 10vw;
     text-align: center;
 }
 
 main > section#calc{
-    border: 0.1em solid black;
+    border: 1px solid black;
     border-radius: 10px;
     font-size: 1.2em;
     width: 80%;
@@ -41,18 +52,21 @@ main > section#calc{
 }
 
 main > section#calc > div#visor{
-    padding: 5px;
-    margin: 5px;
-    height: 10%;
-    border: 0.1em solid black;
-    border-radius: 2px;
-    
+    padding: 0.2em;
+    margin: auto;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    box-sizing: border-box;
+    height: 15%;
+    width: 92%;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 main> section#calc > div#teclado{
     margin: auto;
     width: 90%;
-    height: 90%;
+    height: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,10 +75,24 @@ main> section#calc > div#teclado{
     align-items: baseline;
 }
 
-main> section#calc > div#teclado > div.tec{
+main> section#calc > div#teclado > button.tec{
     width: 25%;
     height: 20%;
     align-self: center;
-    
-    /*margin: 1px;*/
+    border: .1em solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+main> section#modo {
+    margin-top: 15px;
+}
+
+main> section#modo> button{
+    padding: 5px;
+    margin: 5px;
+    width: 40%;
+    background-color: white;
+    border: .1em solid black;
+    border-radius: 5px;
 }
