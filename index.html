@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/estilo-padrao.css">
 </head>
 <body>
@@ -20,26 +20,26 @@
             </div>
 
             <div id="teclado">
-                <button class="tec">C</button>
-                <button class="tec">()</button>
-                <button class="tec">%</button>
-                <button class="tec">/</button>
-                <button class="tec" onclick="discar()">7</button>
-                <button class="tec">8</button>
-                <button class="tec">9</button>
-                <button class="tec">x</button>
-                <button class="tec">4</button>
-                <button class="tec">5</button>
-                <button class="tec">6</button>
-                <button class="tec">-</button>
-                <button class="tec">1</button>
-                <button class="tec">2</button>
-                <button class="tec">3</button>
-                <button class="tec">+</button>
-                <button class="tec">+/-</button>
-                <button class="tec">0</button>
-                <button class="tec">,</button>
-                <button class="tec">=</button>
+                <button class="tec" onclick="limpar()">C</button>
+                <button class="tec" onclick="parenteses()">()</button>
+                <button class="tec" onclick="discar(this.value)" value="%">%</button>
+                <button class="tec" onclick="discar(this.value)" value="/">/</button>
+                <button class="tec" onclick="discar(this.value)" value="7">7</button>
+                <button class="tec" onclick="discar(this.value)" value="8">8</button>
+                <button class="tec" onclick="discar(this.value)" value="9">9</button>
+                <button class="tec" onclick="discar(this.value)" value="x">x</button>
+                <button class="tec" onclick="discar(this.value)" value="4">4</button>
+                <button class="tec" onclick="discar(this.value)" value="5">5</button>
+                <button class="tec" onclick="discar(this.value)" value="6">6</button>
+                <button class="tec" onclick="discar(this.value)" value="-">-</button>
+                <button class="tec" onclick="discar(this.value)" value="1">1</button>
+                <button class="tec" onclick="discar(this.value)" value="2">2</button>
+                <button class="tec" onclick="discar(this.value)" value="3">3</button>
+                <button class="tec" onclick="discar(this.value)" value="+">+</button>
+                <button class="tec" onclick="discar(this.value)" value="+-">+/-</button>
+                <button class="tec" onclick="discar(this.value)" value="0">0</button>
+                <button class="tec" onclick="discar(this.value)" value=",">,</button>
+                <button class="tec" onclick="discar(this.value)" value="=">=</button>
             </div>
         </section>
 
