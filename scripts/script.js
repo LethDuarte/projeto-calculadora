@@ -17,3 +17,8 @@ function igual(){
     console.log(visor);
     
 }
+
+function modoEscuro(){
+    // document.getElementsByTagName('main').style.backgroundColor = "black";
+    document.body.style.backgroundColor = "red";
+}

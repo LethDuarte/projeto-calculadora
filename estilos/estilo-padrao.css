@@ -67,6 +67,7 @@ main > section#calc > div#visor{
     border-radius: 5px;
     background-color: white;
     text-align: center;
+    line-height: 75px;
 }
 
 main> section#calc > div#teclado{
@@ -103,4 +104,26 @@ main> section#modo> button{
     border: .1em solid black;
     border-radius: 5px;
     font-family: var(--fonte-padrao);
+}
+
+@media screen and (min-width: 600px) {
+    header > h1 {
+        font-size: 4.25em;   
+    }
+
+    main {
+        width: 450px;
+        padding-top: 0;
+    }
+
+    main > section#calc > div#visor{
+        height: 12%;
+        font-size: 1.35em;
+    }
+
+    main> section#modo> button{
+        font-size: 1.25em;
+        margin-left: 15px;
+        border: 0.08em solid black;
+    }
 }
