@@ -55,7 +55,7 @@ main > section#calc{
     height: 80%;
 }
 
-main > section#calc > div#visor{
+main > section#calc > input#visor{
     padding: 1px;
     margin: auto;
     margin-top: 10px;
@@ -116,7 +116,7 @@ main> section#modo> button{
         padding-top: 0;
     }
 
-    main > section#calc > div#visor{
+    main > section#calc > input#visor{
         height: 12%;
         font-size: 1.35em;
     }

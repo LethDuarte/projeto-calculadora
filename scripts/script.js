@@ -1,20 +1,32 @@
 var visor = document.getElementById('visor');
+// var visor1 = visor.value;
+
+//document.getElementById('visor').value = "visor";
 
 function discar(tecla){
-    visor.innerHTML += tecla;
+    visor.value += tecla;
 }
 
 function limpar(){
-    visor.innerHTML = " ";
+    visor.value = " ";
 }
 
 function parenteses(){
     alert(visor);
 }
 
+// function somar(){
+//     var sum = visor.value;
+//     visor.value = sum;
+// }
+
 function igual(){
-    var resultado = parseInt(visor.value);
-    console.log(resultado);
+    // var resultado = parseInt(visor.value);
+    // console.log(resultado);
+    var res = Number.parseFloat(visor.value);
+    visor.value = res;
+
+    console.log(typeof res);
 }
 
 function modoEscuro(){
