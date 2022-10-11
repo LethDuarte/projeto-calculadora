@@ -15,18 +15,27 @@ function parenteses(){
     alert(visor);
 }
 
-// function somar(){
-//     var sum = visor.value;
-//     visor.value = sum;
-// }
+function somar(){
+    // var itens = [];
+    // itens.push(visor.value);
+    visor.innerText = " ";
+    //itens.splice(0,0, visor.value);
+    
+    //itens.unshift(visor.value);
+    //itens[0]= visor.value;
+    //visor.innerHTML = " ";
+    // itens[itens.length] = visor.value;
+    
+    //console.log(itens);
+}
 
 function igual(){
     // var resultado = parseInt(visor.value);
     // console.log(resultado);
-    var res = Number.parseFloat(visor.value);
-    visor.value = res;
+    //var res = Number.parseFloat(visor.value);
+    //visor.value = res;
 
-    console.log(typeof res);
+    console.log(typeof visor.value);
 }
 
 function modoEscuro(){
