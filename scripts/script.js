@@ -1,7 +1,4 @@
 var visor = document.getElementById('visor');
-// var visor1 = visor.value;
-
-//document.getElementById('visor').value = "visor";
 
 function discar(tecla){
     visor.value += tecla;
@@ -30,12 +27,18 @@ function somar(){
 }
 
 function igual(){
-    // var resultado = parseInt(visor.value);
-    // console.log(resultado);
-    //var res = Number.parseFloat(visor.value);
-    //visor.value = res;
+    var visor1 = visor.value;
 
-    console.log(typeof visor.value);
+    if(visor1.includes("-")){
+        var num1 = Number(visor1.substring(0, visor1.indexOf("-")));
+        var num2 = Number(visor1.substring(visor1.indexOf("-")+1, visor1.length));
+        var res = num1 - num2;
+
+        visor1 = " ";
+        console.log(res);
+    }
+
+    //console.log(typeof visor.value);
 }
 
 function modoEscuro(){
