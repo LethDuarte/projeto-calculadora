@@ -9,36 +9,61 @@ function limpar(){
 }
 
 function parenteses(){
-    alert(visor);
+    var visor1 = visor.value;
+    if(!visor1.includes("(")){
+        visor.value += "(";
+    } else {
+        visor.value += ")";
+    }
 }
 
 function somar(){
-    // var itens = [];
-    // itens.push(visor.value);
-    visor.innerText = " ";
-    //itens.splice(0,0, visor.value);
-    
-    //itens.unshift(visor.value);
-    //itens[0]= visor.value;
-    //visor.innerHTML = " ";
-    // itens[itens.length] = visor.value;
-    
-    //console.log(itens);
+    var visor1 = visor.value;
+    var num1 = Number(visor1.substring(0, visor1.indexOf("+")));
+    var num2 = Number(visor1.substring(visor1.indexOf("+")+1, visor1.length));
+    var res = num1 + num2;
+
+    visor.value = `${res}`;
+}
+
+function subtrair(){
+    var visor1 = visor.value;
+    var num1 = Number(visor1.substring(0, visor1.indexOf("-")));
+    var num2 = Number(visor1.substring(visor1.indexOf("-")+1, visor1.length));
+    var res = num1 - num2;
+
+    visor.value = `${res}`;
+}
+
+function multi(){
+    var visor1 = visor.value;
+    var num1 = Number(visor1.substring(0, visor1.indexOf("x")));
+    var num2 = Number(visor1.substring(visor1.indexOf("x")+1, visor1.length));
+    var res = num1 * num2;
+
+    visor.value = `${res}`;
+}
+
+function dividir(){
+    var visor1 = visor.value;
+    var num1 = Number(visor1.substring(0, visor1.indexOf("/")));
+    var num2 = Number(visor1.substring(visor1.indexOf("/")+1, visor1.length));
+    var res = num1 / num2;
+
+    visor.value = `${res}`;
 }
 
 function igual(){
     var visor1 = visor.value;
-
     if(visor1.includes("-")){
-        var num1 = Number(visor1.substring(0, visor1.indexOf("-")));
-        var num2 = Number(visor1.substring(visor1.indexOf("-")+1, visor1.length));
-        var res = num1 - num2;
-
-        visor1 = " ";
-        console.log(res);
+        subtrair();
+    } else if(visor1.includes("+")){
+        somar();
+    } else if(visor1.includes("x")){
+        multi();
+    } else if(visor1.includes("/")){
+        dividir();
     }
-
-    //console.log(typeof visor.value);
 }
 
 function modoEscuro(){
