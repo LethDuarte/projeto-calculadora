@@ -15,30 +15,28 @@
 
     <main>
         <section id="calc">
-            <input type="text" name="visor" id="visor">
+            <div id="superior">
+                <input type="text" name="visor" id="visor">
+                <button class="tec1" onclick="limpar()">C</button>
+            </div>
 
             <div id="teclado">
-                <button class="tec" onclick="limpar()">C</button>
-                <!-- <button class="tec" onclick="parenteses()">()</button> -->
-                <button class="tec" onclick="discar(this.value)" value="%">%</button>
-                <button class="tec" onclick="discar(this.value)" value="/">/</button>
-                <button class="tec" onclick="discar(this.value)" value="x">x</button>
                 <button class="tec" onclick="discar(this.value)" value="7">7</button>
                 <button class="tec" onclick="discar(this.value)" value="8">8</button>
                 <button class="tec" onclick="discar(this.value)" value="9">9</button>
-                <button class="tec" onclick="discar(this.value)" value="-">-</button>
+                <button class="tec" onclick="discar(this.value)" value="/">/</button>
                 <button class="tec" onclick="discar(this.value)" value="4">4</button>
                 <button class="tec" onclick="discar(this.value)" value="5">5</button>
                 <button class="tec" onclick="discar(this.value)" value="6">6</button>
-                <button class="tec" onclick="discar(this.value)" value="+">+</button>
+                <button class="tec" onclick="discar(this.value)" value="x">x</button>
                 <button class="tec" onclick="discar(this.value)" value="1">1</button>
                 <button class="tec" onclick="discar(this.value)" value="2">2</button>
                 <button class="tec" onclick="discar(this.value)" value="3">3</button>
-                <br>
-                <button class="tec" onclick="discar(this.value)" value="+-">+/-</button>
+                <button class="tec" onclick="discar(this.value)" value="-">-</button>
                 <button class="tec" onclick="discar(this.value)" value="0">0</button>
                 <button class="tec" onclick="discar(this.value)" value=".">.</button>
                 <button class="tec" onclick="igual()">=</button>
+                <button class="tec" onclick="discar(this.value)" value="+">+</button>
             </div>
         </section>
 

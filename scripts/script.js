@@ -8,15 +8,6 @@ function limpar(){
     visor.value = " ";
 }
 
-function parenteses(){
-    var visor1 = visor.value;
-    if(!visor1.includes("(")){
-        visor.value += "(";
-    } else {
-        visor.value += ")";
-    }
-}
-
 function porcentagem(){
     var visor1 = visor.value;
     var num1 = Number(visor1.substring(0, visor1.indexOf("%")));
