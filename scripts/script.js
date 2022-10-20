@@ -17,6 +17,15 @@ function parenteses(){
     }
 }
 
+function porcentagem(){
+    var visor1 = visor.value;
+    var num1 = Number(visor1.substring(0, visor1.indexOf("%")));
+    var num2 = Number(visor1.substring(visor1.indexOf("%")+1, visor1.length));
+    var res = (num1 * num2)/100;
+
+    visor.value = `${res}`;
+}
+
 function somar(){
     var visor1 = visor.value;
     var num1 = Number(visor1.substring(0, visor1.indexOf("+")));
@@ -63,6 +72,8 @@ function igual(){
         multi();
     } else if(visor1.includes("/")){
         dividir();
+    } else if (visor1.includes("%")){
+        porcentagem();
     }
 }
 

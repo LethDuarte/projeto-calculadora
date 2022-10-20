@@ -74,7 +74,7 @@ main> section#calc > div#teclado{
     margin: auto;
     width: 95%;
     height: 80%;
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -83,6 +83,7 @@ main> section#calc > div#teclado{
 }
 
 main> section#calc > div#teclado > button.tec{
+    margin: 2px;
     width: 21%;
     height: 18%;
     align-self: center;
