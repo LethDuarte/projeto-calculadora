@@ -55,19 +55,21 @@ main > section#calc{
     height: 80%;
 }
 
-/*main > section#calc > div#superior{
-    display: block;
+main > section#calc > div#superior{
+    width: 95%;
+    display: flex;
     justify-content: space-around;
-}*/
+    align-items: flex-start;
+    margin: auto;
+    /* margin-top: 10px;*/
+    margin-bottom: 10px;
+
+}
 
 main > section#calc > div#superior > input#visor{
     padding: 1px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
     height: 65px;
-    width: 75%;
+    width: 71%;
     border: 1px solid black;
     border-radius: 8px;
     background-color: white;
@@ -76,11 +78,8 @@ main > section#calc > div#superior > input#visor{
 }
 
 main > section#calc > div#superior > button.tec1{
-    width: 15%;
-    height: 65px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
+    width: 22.8%;
+    height: 68px;
     border-radius: 8px;
     border: 1px solid black;
     background-color: white;
@@ -101,8 +100,8 @@ main> section#calc > div#teclado{
 
 main> section#calc > div#teclado > button.tec{
     margin: 2px;
-    width: 21%;
-    height: 18%;
+    width: 22.8%;
+    height: 14%;
     align-self: center;
     border: 1px solid black;
     border-radius: 8px;

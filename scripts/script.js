@@ -68,6 +68,10 @@ function igual(){
     }
 }
 
+function enter(){
+    
+}
+
 function modoEscuro(){
     document.body.style.backgroundColor = "#332E33";
     document.getElementById('titulo').style.color = "white";
