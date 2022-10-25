@@ -2,8 +2,10 @@
 
 Construindo uma calculadora básica em HTML, CSS e JavaScript. 
 
-Neste projeto, estou criando o código do zero e aplicando tudo o que aprendi (e pesquisando o que ainda não aprendi).
+Neste projeto, apliquei meus conhecimentos criando o código do zero e pesquisando o que ainda não domino.
 
-Espero que goste!
+Confira o resultado em: <https://lethduarte.github.io/projeto-calculadora/>
 
-Projeto iniciado em setembro/2022. Projeto em andamento.
+Espero que gostem!
+
+Projeto iniciado em setembro/2022. "Finalizado" em outubro/2022.
