@@ -101,7 +101,7 @@ main> section#calc > div#teclado{
 
 main> section#calc > div#teclado > button.tec{
     margin: 2px;
-    width: 22.8%;
+    width: 22%;
     height: 14%;
     align-self: center;
     border: 1px solid black;
@@ -139,6 +139,10 @@ main> section#modo> button{
     main > section#calc > input#visor{
         height: 12%;
         font-size: 1.35em;
+    }
+
+    main > section#calc > div#teclado > button.tec{
+        height: 20%;
     }
 
     main> section#modo> button{
