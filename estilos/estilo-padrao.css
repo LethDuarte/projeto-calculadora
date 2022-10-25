@@ -74,6 +74,7 @@ main > section#calc > div#superior > input#visor{
     border-radius: 8px;
     background-color: white;
     text-align: center;
+    font-size: 1.1em;
     line-height: 75px;
 }
 
@@ -111,16 +112,18 @@ main> section#calc > div#teclado > button.tec{
 
 main> section#modo {
     margin-top: 15px;
+    width: 90%;
 }
 
 main> section#modo> button{
     padding: 5px;
     margin: 5px;
-    width: 40%;
+    width: 45%;
     background-color: white;
     border: .1em solid black;
     border-radius: 5px;
     font-family: var(--fonte-padrao);
+    font-size: 1.15em;
 }
 
 @media screen and (min-width: 600px) {
@@ -139,6 +142,7 @@ main> section#modo> button{
     }
 
     main> section#modo> button{
+        width: 40%;
         font-size: 1.25em;
         margin-left: 15px;
         border: 0.08em solid black;
